@@ -30,6 +30,20 @@
             max-width: 90rem;
             margin: 0 auto;
         }
+
+        .container-program-section {
+            position: relative;
+            color: white;
+        }
+
+        .text-program-section {
+            position: absolute;
+            bottom: 40px;
+        }
+        .text-program-section-sm {
+            position: absolute;
+            bottom: 10px;
+        }
     </style>
 </head>
 
@@ -104,35 +118,38 @@
                     ages and skill levels, fostering development and passion for the sport at every stage.</p>
             </div>
             <!-- container -->
-            <div class="grid grid-cols-2 gap-6">
-                <div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="container-program-section">
                     <img src="./Images/2.png" alt="">
-                    <div>
-                        <h3 class="text-3xl font-extrabold">Junior Program</h3>
-                        <p class="font-medium">Fueling the dreams of tomorrow's stars, our junior hockey program
+                    <div class="text-program-section-sm lg:text-program-section px-5 lg:px-10">
+                        <h3 class="text-xl lg:text-3xl font-extrabold">Junior Program</h3>
+                        <p class="text-sm lg:font-medium mt-4 mb-6">Fueling the dreams of tomorrow's stars, our junior hockey
+                            program
                             provides
                             top-tier coaching and development for aspiring athletes on the rise.</p>
-                        <button class="btn btn-error text-xl font-bold text-white">Register Now!</button>
+                        <button class="btn btn-error lg:text-xl font-bold text-white">Register Now!</button>
                     </div>
                 </div>
-                <div>
+                <div class="container-program-section">
                     <img src="./Images/3.png" alt="">
-                    <div>
-                        <h3 class="text-3xl font-extrabold">Teenager Program</h3>
-                        <p class="font-medium">Nurturing the potential of young athletes, our teenager hockey program
+                    <div class="text-program-section-sm text-program-section px-5 lg:px-10">
+                        <h3 class="text-xl lg:text-3xl font-extrabold">Teenager Program</h3>
+                        <p class="text-sm lg:font-medium mt-4 mb-6">Nurturing the potential of young athletes, our teenager hockey
+                            program
                             combines skill development with mentorship to shape the future stars of the sport.</p>
-                        <button class="btn btn-error text-xl font-bold text-white">Register Now!</button>
+                        <button class="btn btn-error lg:text-xl font-bold text-white">Register Now!</button>
                     </div>
                 </div>
-                <div class="grid col-span-2">
+                <div class="grid lg:col-span-2 container-program-section">
                     <img src="./Images/4.png" alt="">
-                    <div>
-                        <h3 class="text-3xl font-extrabold">Professional Program</h3>
-                        <p class="font-medium">Elevating elite talent to new heights, our professional hockey program
+                    <div class="text-program-section-sm text-program-section px-5 lg:px-10">
+                        <h3 class="text-xl lg:text-3xl font-extrabold">Professional Program</h3>
+                        <p class="text-sm lg:font-medium mt-4 mb-6">Elevating elite talent to new heights, our professional hockey
+                            program
                             offers
                             advanced training, strategic development, and opportunities for players to compete at the
                             highest levels of the sport.</p>
-                        <button class="btn btn-error text-xl font-bold text-white">Register Now!</button>
+                        <button class="btn btn-error lg:text-xl font-bold text-white">Register Now!</button>
                     </div>
                 </div>
             </div>
