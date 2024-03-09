@@ -48,8 +48,12 @@
 
         .badge-position {
             position: absolute;
-            right: 40px;
             bottom: 40px;
+            right: 40px;
+        }
+
+        .badge-position-sm {
+            position: absolute;
         }
     </style>
 </head>
@@ -57,9 +61,45 @@
 <body>
     <header class="container-hockeys">
         <!-- nav -->
-        <nav></nav>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold">Hockey<span class="text-orange-500">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-6">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn btn-error text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
         <!-- banner -->
-        <section class="container-program-section">
+        <section class="container-program-section mt-12">
             <div class="carousel m-2 lg:w-full">
                 <!-- slider 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -78,7 +118,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-black text-white p-8 rounded-2xl w-1/2 badge-position">
+            <div class="bg-black text-white p-8 rounded-2xl badge-position lg:w-1/2 m-2">
                 <h4 class="text-2xl font-extrabold">Meet all the heroes</h4>
                 <p class="font-medium mt-4">Discover the heart and soul of our Hockey Club as we celebrate and honor all
                     our heroes who embody the spirit of the game.</p>
@@ -132,7 +172,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div class="container-program-section">
                     <img src="./Images/2.png" alt="">
-                    <div class="text-program-section-sm lg:text-program-section px-5 lg:px-10">
+                    <div class=" text-program-section px-5 lg:px-10">
                         <h3 class="text-xl lg:text-3xl font-extrabold">Junior Program</h3>
                         <p class="text-sm lg:font-medium mt-4 mb-6">Fueling the dreams of tomorrow's stars, our junior
                             hockey
@@ -144,7 +184,7 @@
                 </div>
                 <div class="container-program-section">
                     <img src="./Images/3.png" alt="">
-                    <div class="text-program-section-sm text-program-section px-5 lg:px-10">
+                    <div class=" text-program-section px-5 lg:px-10">
                         <h3 class="text-xl lg:text-3xl font-extrabold">Teenager Program</h3>
                         <p class="text-sm lg:font-medium mt-4 mb-6">Nurturing the potential of young athletes, our
                             teenager hockey
@@ -155,7 +195,7 @@
                 </div>
                 <div class="grid lg:col-span-2 container-program-section">
                     <img src="./Images/4.png" alt="">
-                    <div class="text-program-section-sm text-program-section px-5 lg:px-10">
+                    <div class=" text-program-section px-5 lg:px-10">
                         <h3 class="text-xl lg:text-3xl font-extrabold">Professional Program</h3>
                         <p class="text-sm lg:font-medium mt-4 mb-6 lg:w-2/4">Our professional hockey program offers
                             advanced training, strategic development, and opportunities for players to compete at the
@@ -365,7 +405,9 @@
                             How can I purchase tickets for upcoming matches and events?
                         </div>
                         <div class="collapse-content">
-                            <p>You can purchase tickets for our upcoming matches and events directly through our website's Ticketing section, or by contacting our customer service team for assistance.</p>
+                            <p>You can purchase tickets for our upcoming matches and events directly through our
+                                website's Ticketing section, or by contacting our customer service team for assistance.
+                            </p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus">
@@ -374,16 +416,21 @@
                             What are the membership benefits and how can I become a part of the club?
                         </div>
                         <div class="collapse-content">
-                            <p>Our membership offers exclusive benefits including access to VIP events, discounts on merchandise, and priority seating. To become a member, simply visit our Membership page and follow the easy registration process.</p>
+                            <p>Our membership offers exclusive benefits including access to VIP events, discounts on
+                                merchandise, and priority seating. To become a member, simply visit our Membership page
+                                and follow the easy registration process.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus">
                         <input type="radio" name="my-accordion-3" />
                         <div class="collapse-title text-xl font-medium">
-                            Where can I find information about team schedules, player profiles, and recent match results?
+                            Where can I find information about team schedules, player profiles, and recent match
+                            results?
                         </div>
                         <div class="collapse-content">
-                            <p>All information regarding team schedules, player profiles, and match results can be found on our website under the 'Team' or 'Matches' section. Additionally, you can stay updated by following our social media channels for real-time updates</p>
+                            <p>All information regarding team schedules, player profiles, and match results can be found
+                                on our website under the 'Team' or 'Matches' section. Additionally, you can stay updated
+                                by following our social media channels for real-time updates</p>
                         </div>
                     </div>
                 </div>
@@ -427,19 +474,19 @@
                             <label class="text-xl font-bold" for="">Your Name</label>
                             <br>
                             <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="text" name="" id=""
-                                placeholder="Enter your full name">
+                                placeholder="Enter your full name" size="">
                         </div>
                         <div>
                             <label class="text-xl font-bold" for="">Your Email</label>
                             <br>
                             <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="email" name="" id=""
-                                placeholder="Enter your email">
+                                placeholder="Enter your email" size="">
                         </div>
                         <div>
                             <label class="text-xl font-bold" for="">Subject</label>
                             <br>
                             <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="text" name="" id=""
-                                placeholder="Enter your subject">
+                                placeholder="Enter your subject" size="">
                         </div>
                         <div>
                             <label class="text-xl font-bold" for="">Phone Number</label>
@@ -450,9 +497,9 @@
                         <div>
                             <label class="text-xl font-bold" for="">Message</label>
                             <br>
-                            <textarea class="bg-[#13131808] rounded-xl p-5 mt-4" name="" id="" cols="30" rows="10"
+                            <textarea class="bg-[#13131808] rounded-xl p-5 mt-4" name="" id="" cols="35" rows="10"
                                 placeholder="Write your message"></textarea>
-                            <input class="text-xl font-bold btn" type="submit" value="Send Message">
+                            <input class="text-xl font-bold btn btn-error" type="submit" value="Send Message">
                         </div>
                     </form>
                 </div>
