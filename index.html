@@ -310,7 +310,7 @@
                 <p class="font-medium mt-6">Connect with us effortlessly through our Get In Touch section, where your
                     inquiries are met with prompt and personalized attention.</p>
             </div>
-            <div class="flex">
+            <div class="flex gap-6 flex-col lg:flex-row">
                 <!-- card section -->
                 <div class="space-y-6 border-2 rounded-2xl p-12">
                     <div class="bg-[#bced6d1a] p-12 rounded-2xl">
@@ -336,25 +336,38 @@
                 </div>
                 <!-- form section -->
                 <div>
-                    <form action="">
-                        <label class="text-xl font-bold" for="">Your Name</label>
-                        <br>
-                        <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="text" name="" id="" placeholder="Enter your full name">
-                        <label class="text-xl font-bold" for="">Your Email</label>
-                        <br>
-                        <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="email" name="" id="" placeholder="Enter your email">
-                        <label class="text-xl font-bold" for="">Enter your subject</label>
-                        <br>
-                        <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="text" name="" id="" placeholder="Enter your full name">
-                        <label class="text-xl font-bold" for="">Phone Number</label>
-                        <br>
-                        <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="number" name="" id="" placeholder="Enter your phone number">
-                        <br>
-                        <label class="text-xl font-bold" for="">Message</label>
-                        <br>
-                        <textarea class="bg-[#13131808] rounded-xl" name="" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
-                        <br>
-                        <input class="text-xl font-bold btn" type="submit" value="Send Message">
+                    <form class="grid grid-cols-1 lg:grid-cols-2 gap-6" action="">
+                        <div>
+                            <label class="text-xl font-bold" for="">Your Name</label>
+                            <br>
+                            <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="text" name="" id=""
+                                placeholder="Enter your full name">
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Your Email</label>
+                            <br>
+                            <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="email" name="" id=""
+                                placeholder="Enter your email">
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Subject</label>
+                            <br>
+                            <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="text" name="" id=""
+                                placeholder="Enter your subject">
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Phone Number</label>
+                            <br>
+                            <input class="mt-4 p-5 bg-[#13131808] rounded-xl" type="number" name="" id=""
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div>
+                            <label class="text-xl font-bold" for="">Message</label>
+                            <br>
+                            <textarea class="bg-[#13131808] rounded-xl p-5 mt-4" name="" id="" cols="30" rows="10"
+                                placeholder="Write your message"></textarea>
+                            <input class="text-xl font-bold btn" type="submit" value="Send Message">
+                        </div>
                     </form>
                 </div>
             </div>
