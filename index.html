@@ -55,6 +55,34 @@
         .badge-position-sm {
             position: absolute;
         }
+        
+        .footer-col-1 {
+            grid-area: col1;
+        }
+        .footer-col-2 {
+            grid-area: col2;
+        }
+        .footer-col-3 {
+            grid-area: col3;
+        }
+        .footer-col-4 {
+            grid-area: col4;
+        }
+
+        .footer-lg {
+            display: grid;
+            grid-template-areas: 
+                "col1 col2 col3 col4";   
+        }
+
+        .footer-sm {
+            display: grid;
+            grid-template-areas: 
+                "col1 col1"
+                "col2 col3"
+                "col4 col4"
+            ;
+        }
     </style>
 </head>
 
@@ -518,7 +546,9 @@
     </main>
     <!-- footer -->
     <footer class="p-10 bg-[#131318] text-[#FFFFFF99] mt-10 lg:mt-24 container-hockeys-footer">
-        <div class="container-hockeys grid lg:grid-cols-4 gap-20 lg:gap-40 mt-5 lg:mt-24">
+        <!-- footer-sm lg:footer-lg -->
+        <div class="container-hockeys grid grid-cols-2 lg:grid-cols-4 gap-20 lg:gap-40 mt-5 lg:mt-24">
+            <!-- footer-col-1 -->
             <aside class="text-center lg:text-left">
                 <h3 class="text-2xl font-extrabold text-white">Get In Touch</h3>
                 <p class="mt-4 mb-6">Connect with us effortlessly through our Get In Touch section,<br> where your
@@ -532,7 +562,8 @@
                     <p class="font-medium">Phone Number : (+62) 123-321-543</p>
                 </div>
             </aside>
-            <nav class="lg:space-y-6">
+            <!-- footer-col-2 -->
+            <nav class="lg:space-y-6 ">
                 <h6 class="text-white mb-7">Company</h6>
                 <a class="link link-hover block">About us</a>
                 <a class="link link-hover block">Leadership</a>
@@ -540,14 +571,16 @@
                 <a class="link link-hover block">News & Article</a>
                 <a class="link link-hover block">Legal Notice</a>
             </nav>
-            <nav class="lg:space-y-6">
+            <!-- footer-col-3 -->
+            <nav class="lg:space-y-6 ">
                 <h6 class="text-white mb-7">Support</h6>
                 <a class="link link-hover block">Help Center</a>
                 <a class="link link-hover block">FAQ</a>
                 <a class="link link-hover block">Ticket Support</a>
                 <a class="link link-hover block">Contact Us</a>
             </nav>
-            <nav class="lg:space-y-6">
+            <!-- footer-col-4 -->
+            <nav class="lg:space-y-6 ">
                 <h6 class="text-white mb-7">Services</h6>
                 <a class="link link-hover block">Academy</a>
                 <a class="link link-hover block">Group Lesson</a>
